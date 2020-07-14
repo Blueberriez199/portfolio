@@ -1,0 +1,48 @@
+#h1{
+  font-size: 45px;  
+  margin-left: auto;
+}
+
+.fixed{
+  position: fixed;
+  background-color: lightgray;
+  padding-top:35px;
+  padding-bottom: 35px;
+  padding-right: 40px;
+  padding-left:40px;
+  text-align:center;
+  top:0px;
+  left:0px;
+}
+
+.relative{
+  position: relative;
+  background-color: lightgray;
+  text-align: center;
+  left:50px;
+  right:150px;
+  padding-bottom: 96px;
+  padding-right: 20px;
+  padding-top: 20px;
+  margin-left: 25px;
+  margin-right: 200px;
+  font-size:20px;
+
+
+}
+
+.absolute{
+  position: absolute;
+  right:100px;
+  background-color: gray;
+  font-size: 20px;
+  text-align: center;
+  padding:25px;
+
+}
+
+.main{
+  margin-left:150px;
+  margin-right:150px;
+  color: black;
+}

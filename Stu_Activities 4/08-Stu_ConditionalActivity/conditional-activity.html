@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Steak Conditional Activity</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var doueatsteak = confirm("Do you eat steak?");
+      if (doueatsteak === true){
+        var howdone = prompt("How do you like it done?");
+      }
+
+      if (doueatsteak) {
+        console.log("Here's a Steak Sandwich done " + howdone + "!");
+      } else{
+        console.log("Here's a Tofu Stir-Fry!");
+      }
+
+      if (howdone === "medium rare"){
+        alert("You have good taste!");
+      } else{
+        alert("I prefer medium rare");
+      }
+
+    </script>
+
+  </body>
+</html>

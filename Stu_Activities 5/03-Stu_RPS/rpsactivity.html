@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> rpsactivity</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Type r p or s</h1>
+
+        <div class = "container">
+            <button type="button" class="btn btn-secondary" onclick= "rock()">Rock</button>
+            <button type="button" class="btn btn-light" onclick= "paper()">Paper</button>
+            <button type="button" class="btn btn-primary" onclick= "scissors">Scissors</button>
+
+        </div>
+    <script type= "text/javascript">
+       var RPS = ["r", "p", "s"];
+       var wins = 0;
+       var losses = 0;
+       var ties = 0;
+       var keyPressed = h;
+       function rock(){
+            set (keyPressed = "r")
+       }
+       function paper(){
+            set (keyPressed = "p")
+       }
+       function scissors(){
+           set (keyPressed = "s")
+       }
+            if (RPS.includes(keyPressed)) {
+                var randomNumber = Math.floor(Math.random() * RPS.length)
+                console.log(RPS[randomNumber])
+                computerLetter = RPS[randomNumber]
+                if (keyPressed === "s" && computerLetter === "r") {
+                    losses++
+                    console.log("losses" + losses)
+                    alert("You Lost!")
+                } if (keyPressed === "p" && computerLetter === "s") {
+                    losses++
+                    console.log("losses" + losses)
+                    alert("You Lost! ")
+                } if (keyPressed === "r" && computerLetter === "p") {
+                    losses++
+                    console.log("losses " + losses)
+                    alert("You Lost!")
+                
+                } else if (keyPressed === computerLetter) {
+                    ties++
+                    alert("You Tied!")
+                } else {
+                wins++
+                console.log("wins: " + wins)
+                alert("You Won!")
+            }
+            }
+            alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties)
+    </script>
+    </body>
+</html>

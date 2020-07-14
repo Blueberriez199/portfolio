@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Events!</title>
+
+  </head>
+  <body>
+    <h1>Please press the A, B, C, or D buttons!</h1>
+
+    <script type="text/javascript">
+    var letters = ["a", "b", "c", "d"];
+    var streak = 0
+      document.onkeyup = function (event){
+        var keypressed = event.key;
+        if (letters.includes(keypressed)) {
+          alert("You got it right");
+          streak++
+          console.log("Your streak is " + streak)
+        } else {
+          alert("Wrong Choice! Try again");
+          streak = 0;
+          console.log("Your streak is 0")
+        }
+      }
+    </script>
+  </body>
+</html>

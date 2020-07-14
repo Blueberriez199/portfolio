@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <title>challenge1</title>
+    </head>
+    <body>
+        <h1>challenge</h1>
+        
+    <script>
+        n = 25
+        for (var number = 1; number < n+1; number++) {
+            if (Number.isInteger(number/ 3) && Number.isInteger(number/5)){
+                document.write("FizzBuzz," + '<br>')
+            }
+            else if (Number.isInteger(number/3)){
+                document.write("Fizz," + '<br>')
+            }
+            else if (Number.isInteger(number/5)){
+                document.write("Buzz," + '<br>')
+            }
+            else{
+                document.write('"' + number + '",' + '<br>')
+            }
+        }
+    </script>
+    </body>
+</hmtl>
