@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title> challenge2</title>
+    </head>
+    <body>
+        <script>
+            var number = 1 ;
+            var pastNumber = 0;
+            var nextNumber = 0;
+            document.write("0" + '<br>');
+            for (var c = 0; c < 11; c++){
+                if(nextNumber === number){
+                    var nextNumber = (number + pastNumber);
+                 pastNumber = nextNumber
+                }else{
+                    var nextNumber = (number + pastNumber);
+                  number = nextNumber
+            }
+            document.write(nextNumber + '<br>')
+            }
+// 0, 1, 1, 2, 3, 5, 8
+//3 variables n pn nn
+// for loop n + pn = nn
+// set n or pn to nn
+//alternate btw...conditional?
+//docwrite nn
+        </script>
+    </body>
+</html>
